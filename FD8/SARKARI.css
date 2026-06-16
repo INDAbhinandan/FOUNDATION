@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.first{
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    background-color: darkred;
+    color: white;
+}
+
+.second{
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    
+}
+
+.first H1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.first H2{
+    text-align: center;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: row;
+   gap: 10px;
+   padding: 5px;
+   list-style: none;
+}
+
+.Link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+ .Link:hover{
+color: yellow
+ }
+
+.card{
+    width:100%;
+  
+    height:100px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.SmCard{
+     width:25%;
+    border: 1px solid black;
+    height:95px;
+    margin: 5px;
+}
+
+.SmCard p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Result{
+    width: 33%;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.Result h1{
+    width: 100%;
+    border: 1px solid black;
+    background-color: darkred;
+    text-align: center;
+    color: white;
+ height: 40px;   
+}
+
+.Result li a {
+  
+    color:blue;
+}
+
