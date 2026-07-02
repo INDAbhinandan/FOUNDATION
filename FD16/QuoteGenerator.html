@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Welcom to my Website</h1>
+
+    <div style="border: 2px solid black;background-color: cornsilk;">
+        <h3 id="quote" style="text-align: center;">
+Click to Generate
+    </h3>
+</div>
+
+    <div style="display: flex; justify-content: center; height: 100vh; align-items: center;">
+        <button style="padding: 20px;" onclick="generate()">Generate Quote</button>
+    </div>
+
+    <script>
+        let quote=["Be yourself; everyone else is already taken.",
+        "So many books, so little time.",
+        "A room without books is like a body without a soul.",
+        "You only live once, but if you do it right, once is enough.",
+        "Be the change that you wish to see in the world."]
+        function generate(){
+            let heading=document.querySelector("#quote")
+            let random=Math.floor(Math.random()*(quote.length))
+           // body.style.backgroundColor=color[random]
+           heading.innerHTML=quote[random]
+        }
+    </script>
+    
+</body>
+</html>
