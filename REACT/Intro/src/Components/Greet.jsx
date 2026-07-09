@@ -1,11 +1,9 @@
 import React from 'react'
 
 const Greet = () => {
- 
   return (
     <div>
-        <h1 className='ram'>Modi Ji</h1>
-        <p className='pr'>You are prime minister of India</p>
+        <h3>Hello i am greet file</h3>
     </div>
   )
 }

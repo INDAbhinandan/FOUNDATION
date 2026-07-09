@@ -34,10 +34,20 @@ let Num=[45,89,62,3,7,4]
 // console.log(res);
 
 // IndexOf=>to find out index of element
-find=Num.indexOf(62)
-console.log(find);
+// find=Num.indexOf(62)
+// console.log(find);
 
 
 
+// Map Method
+
+const students=[45,25,65,12,45]
+
+var sum=0
+students.map((ram)=>{
+ sum=sum+ram
+    
+})
+console.log(sum);
 
 

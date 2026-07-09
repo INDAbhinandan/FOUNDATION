@@ -1,12 +1,101 @@
 *{
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
-.ram{
-  color: red;
+
+/* Card file css
+.Container{
+  width: 30%;
+  background-color: rgb(230, 227, 224);
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px rgb(21, 0, 255);
 }
 
-.pr{
-  border: 3px solid orangered;
+.Container img{
+  height: 100px;
+  width: 100px;
+  margin: 10px 0;
+  border-radius: 50%;
 }
+
+.Container h1 p{
+margin: 10px 0;
+}
+
+.Container button{
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+   box-shadow: 3px 3px 15px rgb(9, 255, 0);
+  
+}
+*/
+.app{
+  display: flex;
+} 
+
+.main{
+  margin: 10px;
+  width: 25%;
+  background-color: rgb(201, 201, 210);
+  padding: 20px;
+  border-radius: 5px;
+ 
+}
+.upper{
+  display: flex;
+  justify-content: space-between;
+}
+.upper img{
+  height:50px;
+  width: 50px;
+}
+.upper button{
+  padding: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+}
+.middle{
+  margin-top: 25px;
+}
+.middle h2{
+  display: inline-block;
+}
+
+.middle2 button{
+  margin: 10px;
+  padding: 2px;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.down{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 10px;
+}
+.down button{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
