@@ -42,60 +42,206 @@ margin: 10px 0;
   
 }
 */
-.app{
-  display: flex;
-} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+    background: #f4f7fb;
+}
+
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card */
 .main{
-  margin: 10px;
-  width: 25%;
-  background-color: rgb(201, 201, 210);
-  padding: 20px;
-  border-radius: 5px;
- 
+    width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
+
+.main:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Top Section */
 .upper{
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .upper img{
-  height:50px;
-  width: 50px;
+    width: 70px;
+    height: 50px;
+    /* border-radius: 10%; */
+    /* object-fit: cover; */
+    /* border: 3px solid #0077ff; */
 }
+
 .upper button{
-  padding: 5px;
-  width: 100px;
-  font-weight: bold;
-  background-color: black;
-  color: white;
-  border-radius: 25px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.upper button:hover{
+    background: #005fd1;
+}
+
+/* Middle */
 .middle{
-  margin-top: 25px;
+    margin-top: 20px;
 }
+
 .middle h2{
-  display: inline-block;
+    font-size: 22px;
+    color: #222;
+}
+
+.middle p{
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Skills */
+.middle2{
+    margin-top: 15px;
 }
 
 .middle2 button{
-  margin: 10px;
-  padding: 2px;
-border-radius: 5px;
-font-weight: bold;
+    margin: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    background: #eef3ff;
+    color: #0077ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.middle2 button:hover{
+    background: #0077ff;
+    color: white;
+}
+
+/* Bottom */
 .down{
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid black;
-  padding: 10px;
-}
-.down button{
-  background-color: black;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-weight: bold;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
 }
 
+.down button{
+    flex: 1;
+    margin: 0 5px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.down button:first-child{
+    background: #28a745;
+    color: white;
+}
+
+.down button:first-child:hover{
+    background: #218838;
+}
+
+.down button:last-child{
+    background: #dc3545;
+    color: white;
+}
+
+.down button:last-child:hover{
+    background: #b52a37;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .main{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+ /* .About h1{
+  background-color: yellow;
+  color: blue;
+  border-radius: 10px;
+ }
+
+.Home{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/id/518502766/photo/giant-roadblock.jpg?s=2048x2048&w=is&k=20&c=K3xXOtNTkcm8ARCAdM5eUlVrNIttNYxlJHhCEy84KHk=");
+background-size: cover;
+}
+
+  .Home h1{
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 15px red;
+  justify-content: center;
+
+  display: inline-block;
+ }
+
+ .Service h1{
+  background-color: rgb(0, 255, 195);
+  color: blue;
+  border-radius: 10px;
+ }
+
+ .Nav{
+  padding: 20px;
+  background-color: rgb(139, 190, 241);
+  display: flex;
+gap: 50px;
+color: black;
+font-weight: bolder;
+
+ } */
+
+/* .count{
+  text-align: center;
+  color: blue;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.btn button{
+  padding: 20px;
+  margin: 20px;
+  background-color: chartreuse;
+} */
