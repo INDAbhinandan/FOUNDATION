@@ -1,4 +1,4 @@
-import student from "../model/studentModel";
+import student from "../model/studentModel.js";
 // creating student
 export const CreateStd=async(req,res)=>{
     try {
@@ -58,5 +58,59 @@ export const ReadStdbyId=async(req,res)=>{
             message:error.message
         })
         
+    }
+}
+
+// update std
+export const updatestd=async(req,res)=>{
+    try {
+        const result=await student.findByIdAndUpdate(req.params.id,
+            req.body,
+            {new:true,runValidators:true})
+        if(!result){
+             res.status(404).json({
+            success:false,
+            message:"Student is not found"
+        })
+        }
+
+         res.status(200).json({
+            success:true,
+            message:"Student updated successfully",
+            data:result
+
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            success:false,
+            message:error.message
+        })
+    }
+}
+
+// delete std
+export const deletestd=async(req,res)=>{
+    try {
+        const result=await student.findByIdAndDelete(req.params.id)
+        if(!result){
+             res.status(404).json({
+            success:false,
+            message:"Student is not found"
+        })
+        }
+
+         res.status(200).json({
+            success:true,
+            message:"Student delete successfully",
+            data:result
+
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            success:false,
+            message:error.message
+        })
     }
 }

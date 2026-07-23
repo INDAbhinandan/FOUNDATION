@@ -1,8 +1,8 @@
-import express from 'express'
-const app=express()
-app.listen(2000,()=>{
-    console.log("Server is running at port no :2000");
-})
+        import express from 'express'
+        const app=express()
+        app.listen(2000,()=>{
+            console.log("Server is running at port no :2000");
+        })
 
 
 // app.get('/',(req,res)=>{     // http://localhost:2000/
